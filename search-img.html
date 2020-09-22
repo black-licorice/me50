@@ -5,18 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 </head>
 <body>
+    <nav>
+        <a href="search.html">Google Search</a>
+        <a href="search-avanced.html">Advanced Search</a>
+    </nav>
     <div class="container">
         <div class="img-background">
             <div class="logo-subtext">
                 <span>images</span>
             </div>
         </div>
-        <form action="https://www.google.be/search?hl=en&tbm=isch&sxsrf=ALeKk02oBE9KfJmn_-W_Mu4qh2TSExfvjA%3A1600664274969&source=hp&biw=927&bih=918&ei=0jJoX_j8OISzsAeA6bmQCQ&q=bruh&oq=&gs_lcp=CgNpbWcQARgAMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnMgcIIxDqAhAnUABYAGCzzgRoAXAAeACAAQCIAQCSAQCYAQCqAQtnd3Mtd2l6LWltZ7ABCg&sclient=img">
-            <input type="text" name="q" placeholder="Search">
-            <input type="submit" value="Google Search" class="btn" name="sclient=img">
+        <form method=get action='https://google.com/search'>
+            <input type="hidden" name="tbm" value="isch">
+            <div>
+                <i class="fas fa-search"></i>
+                <input type="text" name="q" placeholder="image search">
+            </div>
+            
         </form>
     </div>
+    <script>
+        document.querySelector("input").addEventListener("keydown", function(event){
+            this.submit();
+        });
+    </script>
 </body>
 </html>
