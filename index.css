@@ -1,0 +1,69 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+}
+.img-background{
+    
+    font-family: arial,sans-serif;
+    color: #222;
+    font-size: small;
+    text-align: -webkit-left;
+    background: url(https://www.google.be/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png) no-repeat;
+    background-size: 272px 92px;
+    height: 92px;
+    width: 272px;
+}
+.logo-subtext{
+    color: #4285f4;
+font: 16px/16px roboto-regular, arial, sans-serif;
+left: 215px;
+position: relative;
+top: 76px;
+white-space: nowrap;
+}
+form{
+    margin-top: 40px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input[type="text"]{
+    margin-bottom: 30px;
+    padding: 7px;
+    padding-left: 10px;
+    font-size: 18px;
+    width: 500px;
+    border-radius: 15px;
+    border: 1px solid rgb(177, 177, 177);
+    -webkit-box-shadow: 0px 1px 9px 4px rgb(177, 177, 177);
+    -moz-box-shadow: 0px 1px 9px 4px rgb(177, 177, 177);
+    box-shadow: 0px 1px 9px 4px rgb(177, 177, 177);
+}
+.btn{
+    background-color: #4c8bf5;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 4px 0px 0px #2a69d3;
+    -moz-box-shadow: 0px 4px 0px 0px #2a69d3;
+    box-shadow: 0px 4px 0px 0px #2a69d3;
+    position: relative;
+}
+.btn:hover{
+    -webkit-box-shadow: 0px 2px 0px 0px #2a69d3;
+    -moz-box-shadow: 0px 2px 0px 0px #2a69d3;
+    box-shadow: 0px 2px 0px 0px #2a69d3;
+    cursor: pointer;
+    top: 2px;
+}
+.btn:active{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    top: 4px;
+}
