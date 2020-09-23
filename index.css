@@ -44,6 +44,7 @@ input[type="text"]{
     padding-left: 28px;
     font-size: 18px;
     width: 500px;
+    height: 25px;
     border-radius: 15px;
     border: 1px solid rgb(177, 177, 177);
     -webkit-box-shadow: 0px 1px 9px 4px rgb(177, 177, 177);
@@ -81,6 +82,28 @@ form > .btn{
     height: 40px;
     font-size: 14px;
 }
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 500px;
+}
+.search-btn{
+    height: 40px;
+    width: 150px;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    color: #5f6368;
+    border-radius: 5%;
+}
+.search-btn:hover{
+   border-color: #5f6368;
+   -webkit-box-shadow: 1px 1px 1px 1px rgb(240, 240, 240);
+    -moz-box-shadow: 1px 1px 1px 1px rgb(240, 240, 240);
+    box-shadow: 1px 1px 3px 4px rgb(240, 240, 240);
+    cursor: pointer;
+}
+
 i{
     position: relative;
     bottom: -30px;
