@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="a-container">
+        <div class="top-banner">
+            <div class="g-logo"></div>
+        </div>
+        <div class="search-banner">
+            <h1>Advanced Search</h1>
+        </div>
+        <form action="https://google.com/search" id="a-form">
+            <div class="form-container">
+                <p>Find pages with...</p> 
+                <div>all these words: <input class="a-input" type="text" name="as_q"></div>
+                <div>this exact word or phrase: <input class="a-input" type="text" name="as_epq"></div>
+                <div>any of these words: <input class="a-input" type="text" name="as_oq"></div>
+                <div> none of these words: <input class="a-input" type="text" name="as_eq"></div>
+                <div> numbers ranging from: 
+                    <div  class="n-container"lass="numbers">
+                        <input type="text" name="as_nlo"> to <input type="text" name="as_nhi">
+                    </div>
+                </div>
+            </div>
+            <div class="form-container">
+                <p>Then narrow your </p>
+                <p>results by...</p>
+                <div>language: 
+                    <select name="lr">
+                        <option value>any language</option>
+                        <option value="lang_af">Afrikaans</option>
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div>region: 
+                    <select name="cr">
+                        <option value>any region</option>
+                        <option value="countryAF">Afghanistan</option>
+                    </select>
+                </div>
+                <div>last update: 
+                    <select name="as_qdr">
+                        <option value>anytime</option>
+                        <option value="d">past 24 hours</option>
+                        <option value="w">past week</option>
+                        <option value="m">past month</option>
+                        <option value="y">past year</option>
+                    </select>
+                </div>
+                <div>site or domain: 
+                    <input type="text" class="a-input" name="as_sitesearch">
+                </div>
+                <div>terms appearing:
+                   <select name="as_occt">
+                        <option value>anywhere on the page</option>
+                        <option value="title">in the title of the page</option>
+                    </select> 
+                </div>
+                <div>
+                    <a href="https://support.google.com/websearch?p=adv_safesearch&hl=en">SafeSearch</a>
+                    <select name="safe">
+                        <option value>Show most relevant results</option>
+                        <option value="active">Filter explicit results</option>
+                    </select>
+                </div>
+                <div>file type:
+                    <select name="as_filetype" >
+                        <option value>any format</option>
+                        <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
+                    </select>
+                </div>
+                <div>
+                    <a href="https://support.google.com/websearch?p=ws_images_usagerights&hl=en">usage rights</a>
+                    <select name="sur" >
+                        <option value>all</option>
+                        <option value="cl">Creative Commons licences</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn">Advanced Search</button>
+        </form>
+    </div>
+</body>
+</html>
